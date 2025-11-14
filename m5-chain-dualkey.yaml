@@ -44,9 +44,6 @@ binary_sensor:
       number: 0
       mode: INPUT
       inverted: true
-    filters:
-      - delayed_on: 10ms
-      - delayed_off: 10ms
 
   - platform: gpio
     id: key2
@@ -55,9 +52,6 @@ binary_sensor:
       number: 17
       mode: INPUT
       inverted: true
-    filters:
-      - delayed_on: 10ms
-      - delayed_off: 10ms
 
   # -----------------------
   # Derived binary sensors
@@ -122,14 +116,14 @@ sensor:
     pin: 8
     name: "DIP Switch 1"
     attenuation: 11db
-    update_interval: 10s
+    update_interval: 1s
 
   - platform: adc
     id: switch_2_adc
     pin: 7
     name: "DIP Switch 2"
     attenuation: 11db
-    update_interval: 10s
+    update_interval: 1s
 
 switch:
   - platform: gpio

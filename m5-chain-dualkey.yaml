@@ -80,7 +80,7 @@ sensor:
     attenuation: 11db
     update_interval: 30s
     filters:
-      - multiply: 1.4   # tweak this after checking
+      - multiply: 1.5018
 
   # Battery %
   - platform: template
@@ -129,7 +129,6 @@ switch:
   - platform: gpio
     id: led_power_switch
     pin: 40   # KBD_WS2812_POWER_IO - LED power control
-    restore_mode: RESTORE_DEFAULT_ON
 
 light:
   - platform: esp32_rmt_led_strip

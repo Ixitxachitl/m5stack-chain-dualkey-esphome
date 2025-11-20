@@ -77,7 +77,7 @@ sensor:
     id: adc_battery
     pin: 10
     name: "DualKey Battery Voltage"
-    attenuation: 11db
+    attenuation: 12db
     update_interval: 30s
     filters:
       - multiply: 1.5018
@@ -99,7 +99,7 @@ sensor:
     id: adc_vbus
     pin: 2
     name: "DualKey USB VBUS"
-    attenuation: 11db
+    attenuation: 12db
     update_interval: 10s
 
   # Charge state ADC
@@ -107,7 +107,7 @@ sensor:
     id: adc_charge
     pin: 9
     name: "DualKey Charge Status"
-    attenuation: 11db
+    attenuation: 12db
     update_interval: 10s
 
   # DIP switches
@@ -115,14 +115,14 @@ sensor:
     id: switch_1_adc
     pin: 8
     name: "DIP Switch 1"
-    attenuation: 11db
+    attenuation: 12db
     update_interval: 1s
 
   - platform: adc
     id: switch_2_adc
     pin: 7
     name: "DIP Switch 2"
-    attenuation: 11db
+    attenuation: 12db
     update_interval: 1s
 
 switch:
